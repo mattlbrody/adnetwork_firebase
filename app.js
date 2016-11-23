@@ -158,10 +158,44 @@ window.addEventListener('load', initApp);
 
 var rootRef = app.database().ref();
 
-rootRef.child("test").set({
-	name: "hello"
-})
 
+//add points to users after they watch a video
+var points = 4;
+var userId = currentUid
+
+
+
+function writeUserData(userId) {
+  if(rootref.child(userId).exists()) {
+    console.log("userexists")
+  } else {
+    rootref.child(userId).set({
+      points: 0,
+    });
+  }
+}
+
+document.getElementById('button').addEventListener('click',function() {
+  updateUserData(userId, points)
+},false);
+
+function updateUserData(userId, points) {
+  var userIdRef = rootref.child(userId)
+  var userPointsRef = userIdRef.child("points")
+  var pointsCurr
+
+  userPointsRef.once('value', function(pts){
+    pointsCurr = pts.val()
+    var numPoints = Number(pointsCurr)
+    userIdRef.update({
+      points: numPoints + points
+    });
+  })
+}
+
+writeUserData(userId)
+
+// updateUserData(userId, points)
 
 
 
