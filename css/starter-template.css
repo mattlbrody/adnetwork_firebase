@@ -1,0 +1,98 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.cashout {
+  margin-top:8px;
+}
+
+.modal-dialog {
+	margin-top:30vh;
+}
+
+.center {
+	text-align:center;
+}
+
+.paypalbutton {
+	background: hsla(37, 91%, 58%, 1);
+	border-radius:5px;
+	border: 0px solid white;
+	padding:10px 20px;
+	color:white;
+	border-bottom: .25rem solid hsla(37, 91%, 50%, 1)
+}
+
+.videoDown {
+	margin: 12vh auto 0 auto;
+	width:70%;
+}
+
+.jw-card-slider .jw-card-slider-align {
+	margin:0;
+}
+
+.jw-card-slider .jw-card-slider-list .jw-card-slider-slide {
+	width:100% !important;
+}
+
+.jw-card.jw-card--featured .jw-card-container {
+	background-image: none !important;
+	background-color: transparent;
+}
+
+.jw-card .jw-card-container {
+	background-color: transparent;
+}
+
+.jw-card-info.jw-card-row {
+	display:none;
+}
+
+.jw-card .jw-card-play-button {
+	opacity: 1 !important;
+	transition: none;
+}
+
+.jw-button-play {
+	border-radius:0;
+	width:60px;
+	height:60px;
+	border-width:4px;
+}
+
+.jw-button-play .jwy-icon-play {
+	font-size: .9em;
+}
+
+.jw-card.jw-card--featured.is-visible:not(.jw-card--touch) .jw-card-container:hover {
+	background-color:rgba(0,0,0,0);
+}
+
+.jw-card:not(.jw-card--touch):not(.jw-card-menu-open) .jw-card-container .jw-card-controls {
+	opacity:1;
+}
+
+.btn-success, .btn-success:hover, .btn-success:active {
+	background-color: #4E9642;
+	border-color: #4E9642;
+}
+
+.navbar-brand {
+	padding: 9px 0 0 0;
+}
+
+@media screen and (max-width: 800px) {
+    .jw-view .videoDown {
+		width:100%;
+	}
+	.jw-card-slider .jw-card-slider-container .jw-card-slider-align {
+		margin:0;
+	}
+}
+
+
